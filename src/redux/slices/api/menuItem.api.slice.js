@@ -1,5 +1,4 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import { getItemById } from '../../../../../Backend/controllers/item.controller';
 
 export const menuItemApiSlice = createApi({
   reducerPath: 'menuItemApi',

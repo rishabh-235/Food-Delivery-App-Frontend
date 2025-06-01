@@ -1,4 +1,3 @@
-import React from 'react'
 import dashboardIcon from '../assets/material-symbols_dashboard-rounded.png';
 import chairIcon from '../assets/mdi_seat.png';
 import orderBookIcon from '../assets/bxs_food-menu.png';
