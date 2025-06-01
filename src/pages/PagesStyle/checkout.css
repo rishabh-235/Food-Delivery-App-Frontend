@@ -1,0 +1,422 @@
+.checkout-back-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #505050;
+  border: none;
+  border-radius: 15px;
+  width: 132px;
+  height: 39px;
+  cursor: pointer;
+  font-size: 13px;
+  color: white;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.checkout-item-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.checkout-item-card {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+
+.checkout-item-image{
+  width: 174px;
+}
+
+.checkout-item-card img {
+  border-radius: 15px;
+}
+
+.checkout-item-details {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+  gap: 10px;
+}
+
+.checkout-item-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  width: 11.5rem;
+}
+
+.checkout-item-details-header h3 {
+  font-weight: 600;
+}
+
+.checkout-item-card-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.checkout-item-quantity-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.checkout-item-quantity-controls button {
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  border: 1px solid rgba(16, 16, 16, 0.4);
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.cooking-details {
+  margin-top: 20px;
+  color: #8c7b7b;
+  font-size: 12px;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 4px;
+}
+
+.delivery-mode {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 368px;
+  height: 60px;
+  background-color: #e4e4e4;
+  border-radius: 32px;
+  margin-top: 37px;
+}
+
+.delivery-mode button {
+  width: 158px;
+  height: 42px;
+  border-radius: 23px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mode-active {
+  background-color: #ffffff;
+}
+
+.mode-inactive {
+  background-color: transparent;
+}
+
+.checkout-total {
+  width: 426px;
+  height: 146px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 8px 16px;
+  background-color: rgba(255, 244, 143, 0.14);
+  position: relative;
+  right: 1.8rem;
+  margin-top: 25px;
+  gap: 10px;
+  color: #817070;
+  font-size: 12px;
+}
+
+.checkout-total div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.checkout-delivery-charge {
+  margin-top: 8px;
+}
+
+.checkout-delivery-charge span {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 5px;
+}
+
+.checkout-grand-total {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  margin-top: 28px;
+}
+
+.delivery-details {
+  width: 426px;
+  height: 146px;
+  position: relative;
+  right: 1.8rem;
+}
+
+.personal-details {
+  padding: 20px 16px;
+  border-top: 3px solid #e5e5e5;
+  border-bottom: 3px solid #e5e5e5;
+}
+
+.personal-details h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.personal-details p {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.personal-details input{
+  width: 100px;
+  font-size: 12px;
+  border: none;
+  border-bottom: 1px dashed #C7C7C7;
+  outline: none;
+  margin-right: 10px;
+}
+
+.personal-details input::placeholder {
+  font-size: 12px;
+  color: #6e6e6e;
+}
+
+.delivery-address {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 16px;
+  border-bottom: 3px solid #e5e5e5;
+  font-size: 11px;
+}
+
+.delivery-address div {
+  display: flex;
+  gap: 13px;
+}
+
+.delivery-address input{
+  width: 120px;
+  font-size: 12px;
+  border: none;
+  border-bottom: 1px dashed #C7C7C7;
+  outline: none;
+  margin-right: 10px;
+}
+
+.delivery-address input::placeholder {
+  font-size: 12px;
+  color: #6e6e6e;
+}
+
+.people{
+  width: 10.06px;
+  height: 13px;
+  font-size: 16px;
+  color: #4AB425;
+}
+
+.place-order-swipe-button {
+  width: 390px;
+  height: 105px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  position: relative;
+  right: 0.6rem;
+}
+
+.add-cooking-instructions{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.add-cooking-instructions img{
+  position: relative;
+  left: 41%;
+  top: 45%;
+}
+
+.cooking-instructions-input{
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  gap: 20px;
+  position: relative;
+  top: 47%;
+}
+
+.cooking-instructions-input h1{
+  font-size: 24px;
+  font-weight: 500;
+  text-align: start;
+  width: 370px;
+}
+
+.cooking-instructions-input p{
+  font-size: 12px;
+  font-weight: 500;
+  color: #999999;
+}
+
+.add-cooking-instructions textarea{
+  background-color: transparent;
+  border: none;
+  width: 352px;
+  height: 76px;
+  border-radius: 5px;
+  border: 1px solid #C7C7C7;
+  padding: 10px;
+  color: #6E6E6E;
+}
+
+.cooking-instruction-buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 8rem;
+}
+
+.cancel-button{
+  width: 185px;
+  height: 55px;
+  background-color: #F0F5F3;
+  border: none;
+  color: #505050;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.cooking-instruction-next-button{
+  width: 185px;
+  height: 55px;
+  background-color: #505050;
+  border: none;
+  color: #F5F5F5;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  position: relative;
+  top: 10rem;
+}
+
+.empty-cart p{
+  font-size: 18px;
+  color: #505050;
+  font-weight: 500;
+}
+
+.add-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  z-index: 1000;
+  position: absolute;
+  right: 0.01rem;
+  bottom: 0.01rem;
+  background-color: rgba(21, 20, 20, 0.53);
+  backdrop-filter: blur(3px);
+}
+
+.add-details-container h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #505050;
+  font-weight: 500;
+}
+
+.add-details-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.add-details-inputs div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.add-details-inputs div input {
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #C7C7C7;
+  padding: 10px;
+  font-size: 14px;
+  margin-left: 10px;
+  outline: none;
+}
+
+.add-details-container input::placeholder {
+  color: #6E6E6E;
+  font-size: 14px;
+}
+
+.add-details-next-button {
+  width: 132px;
+  height: 39px;
+  background-color: #505050;
+  color: #F5F5F5;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 13px;
+}

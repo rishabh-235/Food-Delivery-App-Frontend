@@ -1,0 +1,147 @@
+.order-line-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 247px;
+    height: 315px;
+    padding: 8px 15px;
+    border-radius: 0.9rem;
+    border: 1px solid #e0e0e0;
+    color: black;
+    gap: 0.7rem;
+}
+
+.order-line-card-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 31.69px;
+    font-weight: 500;
+    border-radius: 0.9rem;
+    background-color: #ffffff;
+    padding: 0.6rem;
+}
+
+.order-line-card-title {
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.6rem;
+} 
+
+.order-table-time{
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.order-line-items-count{
+    font-size: 13.5px;
+}
+
+.order-line-card-header-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 0.3rem;
+}
+
+.order-line-card-header-right{
+    width: 90px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    gap: 0.1rem;
+}
+
+.order-line-card-order-mode{
+    font-size: 10px;
+}
+
+.order-line-card-order-status{
+    font-size: 8.5px;
+    font-weight: 500;
+    color: #2C2C2E;
+}
+
+.order-line-card-content{
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    height: 10rem;
+    background-color: #ffffff;
+    padding: 1rem 0.8rem;
+    border-radius: 0.9rem;
+}
+
+dt{
+    font-size: 10px;
+    margin-bottom: 0.2rem;
+}
+
+dd{
+    margin-left: 1rem;
+    font-size: 8.5px;
+    margin-bottom: 0.2rem;
+}
+
+.order-line-card-order-status-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    width: 107px;
+    height: 30px;
+    border-radius: 1rem;
+    font-size: 10px;
+    font-weight: 500;
+    border: none;
+}
+
+.order-done{
+    background-color: #B9F8C9;
+}
+
+.order-done-status{
+    color: #34C759;
+    }
+
+.order-done-button{
+    background-color: #31FF65;
+    color: #0E912F;
+}
+
+.order-dine-in{
+    background-color: #FFE3BC;
+}
+
+.order-dine-in-status{
+    color: #FF9500;
+    }
+
+.order-dine-in-button{
+    background-color: #FDC474;
+    color: #D87300;
+}
+
+.order-take-away{
+    background-color: #C2D4D9;
+}
+
+.order-take-away-status{
+    color: #3181A3;
+    }
+
+.order-take-away-button{
+    background-color: #9BAEB3;
+    color: #3B413D;
+}

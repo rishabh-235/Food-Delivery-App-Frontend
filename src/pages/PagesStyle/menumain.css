@@ -1,0 +1,38 @@
+.menu-main-page-container{
+    padding: 22px 30px;
+}
+
+.menu-main-page-header h1{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #231100;
+}
+
+.menu-main-page-header p{
+    font-size: 14px;
+    color: #231100;
+    margin-bottom: 15px;
+}
+
+.menu-main-page-header input{
+    width: 368px;
+    height: 50px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #F0F5F3;
+    padding-left: 3rem;
+}
+
+.menu-main-page-header input::placeholder{
+    color: rgba(107,107,107,0.55);
+    font-size: 15px;
+}
+
+.menu-main-page-header img{
+    position: relative;
+    bottom: 2.3rem;
+    left: 1rem;
+}

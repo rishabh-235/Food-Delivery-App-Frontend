@@ -1,0 +1,16 @@
+.order-page-container {
+  width: 100%;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.order-line-container{
+    margin-left: 1.5rem;
+    padding: 1rem 6rem 1rem 5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+    gap: 3rem;
+}
+
