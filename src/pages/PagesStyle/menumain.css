@@ -36,3 +36,21 @@
     bottom: 2.3rem;
     left: 1rem;
 }
+
+@media (max-width: 428px) {
+    .menu-main-page-container {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .menu-main-page-container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 387px) {
+    .menu-main-page-container {
+        padding: -5px;
+    }
+}

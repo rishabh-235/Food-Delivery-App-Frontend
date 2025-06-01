@@ -19,9 +19,6 @@ function TablesPage() {
   },[tables]);
 
   const handleCreateTable = async () => {
-
-    console.log("Creating table with name:", tableName, "and chair count:", chairCount);
-
     try {
       const result = await addTable({ name: tableName, capacity: chairCount }).unwrap();
       setTableArray([...tableArray, result.table]);

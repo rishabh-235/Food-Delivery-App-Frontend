@@ -34,7 +34,7 @@ function AnalyticsPage() {
   const { data: monthlyRevenueSummary } = useGetMonthlyRevenueSummaryQuery();
   const { data: yearlyRevenueSummary } = useGetYearlyRevenueSummaryQuery();
   const [revenueSummaryValue, setRevenueSummaryValue] = useState(weeklyRevenueSummary);
-  const [filter, setFilter] = useState();
+  const [filter, setFilter] = useState("All");
 
   const handleOrderSummaryChange = (event) => {
     setOrderSummaryOption(event.target.value);
@@ -116,8 +116,8 @@ function AnalyticsPage() {
           </div>
         </div>
 
-        <div className="analytics-chart-container">
-          <div className="order-summary-card apply-filter">
+        <div style={filter !== "All" ? {justifyContent: "center"} : {justifyContent: "space-between"}} className="analytics-chart-container">
+          {(filter === "Order Summary" || filter === "All") && <div style={filter !== "All" ? {width: "60%"} : {}} className="order-summary-card">
             <div className="order-summary-card-header">
               <div>
                 <p className="order-summary-card-title">Order Summary</p>
@@ -163,9 +163,9 @@ function AnalyticsPage() {
             <div className="order-summary-pie-chart">
               <PieChart data={orderSummaryValue} />
             </div>
-          </div>
+          </div>}
 
-          {/* <div className="order-summary-card">
+          {(filter === "Revenue Analysis" || filter === "All") && <div style={filter !== "All" ? {width: "60%"} : {}} className="order-summary-card">
             <div className="order-summary-card-header">
               <div>
                 <p className="order-summary-card-title">Revenue</p>
@@ -189,9 +189,9 @@ function AnalyticsPage() {
             <div className="revenue-summary-line-chart">
               <LineChart data={revenueSummaryValue} />
             </div>
-          </div> */}
+          </div>}
 
-          {/* <div className="order-summary-card">
+          {(filter === "Table Analysis" || filter === "All") && <div style={filter !== "All" ? {width: "60%"} : {}} className="order-summary-card">
             <div className="order-summary-card-header">
               <div>
                 <p className="order-summary-card-title">Tables</p>
@@ -228,7 +228,7 @@ function AnalyticsPage() {
                 })}
               </div>
             </div>
-          </div> */}
+          </div>}
         </div>
 
         <div className="order-distribution-container">

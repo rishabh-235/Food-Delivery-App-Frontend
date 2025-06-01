@@ -112,26 +112,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25%;
+  width: 30%;
   height: 2.5rem;
 }
 
 .analytics-dropdown-container-order img{
-  position: absolute;
-  right: 63.5rem;
+  position: relative;
+  left: 5.5rem
 }
 
 .analytics-dropdown-container-revenue{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25%;
+  width: 30%;
   height: 2.5rem;
 }
 
 .analytics-dropdown-container-revenue img{
-  position: absolute;
-  right: 33.8rem;
+  position: relative;
+  left: 5.5rem;
 }
 
 .analytics-dropdown{

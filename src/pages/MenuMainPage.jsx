@@ -6,7 +6,6 @@ function MenuMainPage() {
 
   return (
     <div className="menu-main-page-container">
-
         <Outlet />
     </div>
   )

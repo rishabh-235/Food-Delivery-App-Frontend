@@ -16,6 +16,7 @@ function FilterBar({ filter, setFilter }) {
     }} className='search-bar' >
         <p>Filter...</p>
         <div id="filter-options">
+            <button onClick={handleFilterChange}>All</button>
             <button onClick={handleFilterChange}>Order Summary</button>
             <button onClick={handleFilterChange}>Revenue Analysis</button>
             <button onClick={handleFilterChange}>Table Analysis</button>
