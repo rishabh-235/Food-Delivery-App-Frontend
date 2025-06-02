@@ -1,5 +1,12 @@
 .menu-main-page-container{
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
     padding: 22px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
 }
 
 .menu-main-page-header h1{

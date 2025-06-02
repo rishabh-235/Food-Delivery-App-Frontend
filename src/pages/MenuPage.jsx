@@ -17,6 +17,7 @@ function MenuPage() {
   const { data: products } = useGetItemsByCategoryQuery(category);
 
   useEffect(() => {
+    document.getElementById("menu-main-page").style.overflowY = "scroll";
     if (products) {
       setShowItems(products);
     }

@@ -1,3 +1,16 @@
+.checkout-header {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.checkout-page-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .checkout-back-button {
   display: flex;
   align-items: center;
@@ -14,7 +27,7 @@
   text-decoration: none;
 }
 
-.checkout-item-list{
+.checkout-item-list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,6 +36,7 @@
   height: auto;
   gap: 10px;
   margin-top: 15px;
+  padding: 0 10px;
 }
 
 .checkout-item-card {
@@ -31,7 +45,7 @@
   gap: 15px;
 }
 
-.checkout-item-image{
+.checkout-item-image {
   width: 174px;
 }
 
@@ -55,7 +69,7 @@
   font-size: 18px;
   font-weight: 600;
   margin: 0;
-  width: 11.5rem;
+  width: 100%;
 }
 
 .checkout-item-details-header h3 {
@@ -91,12 +105,14 @@
 }
 
 .cooking-details {
+  width: 100%;
   margin-top: 20px;
   color: #8c7b7b;
   font-size: 12px;
   text-decoration: underline;
   text-decoration-style: dotted;
   text-underline-offset: 4px;
+  padding-left: 10px;
 }
 
 .delivery-mode {
@@ -137,8 +153,6 @@
   justify-content: start;
   padding: 8px 16px;
   background-color: rgba(255, 244, 143, 0.14);
-  position: relative;
-  right: 1.8rem;
   margin-top: 25px;
   gap: 10px;
   color: #817070;
@@ -173,8 +187,6 @@
 .delivery-details {
   width: 426px;
   height: 146px;
-  position: relative;
-  right: 1.8rem;
 }
 
 .personal-details {
@@ -193,11 +205,11 @@
   margin-top: 4px;
 }
 
-.personal-details input{
+.personal-details input {
   width: 100px;
   font-size: 12px;
   border: none;
-  border-bottom: 1px dashed #C7C7C7;
+  border-bottom: 1px dashed #c7c7c7;
   outline: none;
   margin-right: 10px;
 }
@@ -221,11 +233,11 @@
   gap: 13px;
 }
 
-.delivery-address input{
+.delivery-address input {
   width: 120px;
   font-size: 12px;
   border: none;
-  border-bottom: 1px dashed #C7C7C7;
+  border-bottom: 1px dashed #c7c7c7;
   outline: none;
   margin-right: 10px;
 }
@@ -235,23 +247,24 @@
   color: #6e6e6e;
 }
 
-.people{
+.people {
   width: 10.06px;
   height: 13px;
   font-size: 16px;
-  color: #4AB425;
+  color: #4ab425;
 }
 
 .place-order-swipe-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 390px;
   height: 105px;
   margin-top: 3rem;
   margin-bottom: 1rem;
-  position: relative;
-  right: 0.6rem;
 }
 
-.add-cooking-instructions{
+.add-cooking-instructions {
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -262,13 +275,13 @@
   display: none;
 }
 
-.add-cooking-instructions img{
+.add-cooking-instructions img {
   position: relative;
   left: 41%;
   top: 45%;
 }
 
-.cooking-instructions-input{
+.cooking-instructions-input {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -280,31 +293,31 @@
   top: 47%;
 }
 
-.cooking-instructions-input h1{
+.cooking-instructions-input h1 {
   font-size: 24px;
   font-weight: 500;
   text-align: start;
   width: 370px;
 }
 
-.cooking-instructions-input p{
+.cooking-instructions-input p {
   font-size: 12px;
   font-weight: 500;
   color: #999999;
 }
 
-.add-cooking-instructions textarea{
+.add-cooking-instructions textarea {
   background-color: transparent;
   border: none;
   width: 352px;
   height: 76px;
   border-radius: 5px;
-  border: 1px solid #C7C7C7;
+  border: 1px solid #c7c7c7;
   padding: 10px;
-  color: #6E6E6E;
+  color: #6e6e6e;
 }
 
-.cooking-instruction-buttons{
+.cooking-instruction-buttons {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -313,10 +326,10 @@
   margin-top: 8rem;
 }
 
-.cancel-button{
+.cancel-button {
   width: 185px;
   height: 55px;
-  background-color: #F0F5F3;
+  background-color: #f0f5f3;
   border: none;
   color: #505050;
   font-size: 16px;
@@ -325,12 +338,12 @@
   border-radius: 15px;
 }
 
-.cooking-instruction-next-button{
+.cooking-instruction-next-button {
   width: 185px;
   height: 55px;
   background-color: #505050;
   border: none;
-  color: #F5F5F5;
+  color: #f5f5f5;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -349,7 +362,7 @@
   top: 10rem;
 }
 
-.empty-cart p{
+.empty-cart p {
   font-size: 18px;
   color: #505050;
   font-weight: 500;
@@ -369,6 +382,7 @@
   left: 0;
   background-color: rgba(21, 20, 20, 0.53);
   backdrop-filter: blur(3px);
+  overflow-y: hidden;
 }
 
 .add-details-container h1 {
@@ -387,7 +401,7 @@
   padding: 20px;
 }
 
-.add-details-inputs div{
+.add-details-inputs div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -398,7 +412,7 @@
   width: 250px;
   height: 40px;
   border-radius: 5px;
-  border: 1px solid #C7C7C7;
+  border: 1px solid #c7c7c7;
   padding: 10px;
   font-size: 14px;
   margin-left: 10px;
@@ -406,7 +420,7 @@
 }
 
 .add-details-container input::placeholder {
-  color: #6E6E6E;
+  color: #6e6e6e;
   font-size: 14px;
 }
 
@@ -414,9 +428,37 @@
   width: 132px;
   height: 39px;
   background-color: #505050;
-  color: #F5F5F5;
+  color: #f5f5f5;
   border: none;
   border-radius: 15px;
   cursor: pointer;
   font-size: 13px;
+}
+
+@media (max-width: 376px) {
+  .delivery-mode {
+    width: 330px;
+    height: 50px;
+  }
+
+  .delivery-mode button {
+    width: 145px;
+    height: 35px;
+  }
+
+  .checkout-total {
+    width: 390px;
+    height: 146px;
+    font-size: 11px;
+  }
+
+  .delivery-details {
+    width: 390px;
+    height: 146px;
+  }
+
+  .place-order-swipe-button {
+    width: 380px;
+    height: 95px;
+  }
 }

@@ -44,7 +44,6 @@ function TablesPage() {
   return (
     <div className="tables-page-container">
       <div className="analytics-searchbar-container">
-        <SearchBar />
       </div>
 
       <div className="table-content-container">

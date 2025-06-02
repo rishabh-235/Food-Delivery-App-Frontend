@@ -112,6 +112,7 @@ function CheckOutPage() {
           ".add-details-container"
         );
         addDetailsContainer.style.display = "none";
+        document.getElementById("menu-main-page").style.overflowY = "scroll";
       })
       .catch((error) => {
         console.error("Error adding user:", error);

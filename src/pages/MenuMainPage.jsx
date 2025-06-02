@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom';
 function MenuMainPage() {
 
   return (
-    <div className="menu-main-page-container">
+    <div id='menu-main-page' className="menu-main-page-container">
         <Outlet />
     </div>
   )

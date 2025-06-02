@@ -98,6 +98,22 @@
   }
 }
 
+@media (max-width: 480px) {
+  .swipe-to-confirm {
+    width: 97%;
+    height: 95px;
+  }
+  
+  .swipe-slider {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .swipe-text {
+    font-size: 12px;
+  }
+}
+
 /* Animation for confirmed state */
 @keyframes pulse {
   0% { transform: scale(1); }
