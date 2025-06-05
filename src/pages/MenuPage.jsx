@@ -7,6 +7,7 @@ import searchIcon from "../assets/searchIcon.png";
 import { useGetItemsByCategoryQuery } from "../redux/slices/api/menuItem.api.slice";
 import { useDispatch } from "react-redux";
 import { addToCart, decreaseQuantity } from "../redux/slices/state/cart.slice";
+import Spinner from "../components/Spinner";
 
 function MenuPage() {
   const [items, setItems] = useState([]);
@@ -14,7 +15,7 @@ function MenuPage() {
   const [showItems, setShowItems] = useState([]);
   const dispatch = useDispatch();
 
-  const { data: products } = useGetItemsByCategoryQuery(category);
+  const { data: products, isLoading } = useGetItemsByCategoryQuery(category);
 
   useEffect(() => {
     document.getElementById("menu-main-page").style.overflowY = "scroll";
@@ -372,8 +373,8 @@ function MenuPage() {
       </div>
 
       <div className="menu-items-container">
-        <h1>Pizza</h1>
-        <div className="food-items-list">
+        <h1>{category}</h1>
+        {isLoading ? <Spinner /> : <div className="food-items-list">
           {showItems?.map((product, _) => {
             const item = items.find((item) => item._id === product._id);
             return (
@@ -421,7 +422,7 @@ function MenuPage() {
               </div>
             );
           })}
-        </div>
+        </div>}
 
         <Link to="checkout" className={`next-button ${!items.length ? "disabled" : ""}`}>
           Next

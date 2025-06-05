@@ -5,6 +5,7 @@ import deleteIcon from "../assets/deleteIcon.png";
 import editIcon from "../assets/editIcon.png";
 import { useAddTableMutation, useGetTablesQuery, useRemoveTableMutation } from "../redux/slices/api/admin.api.slice";
 import { useEffect, useState } from "react";
+import Spinner from "../components/Spinner";
 
 function TablesPage() {
   const [addTable] = useAddTableMutation();
@@ -49,7 +50,7 @@ function TablesPage() {
       <div className="table-content-container">
         <p className="table-content-title">Tables</p>
 
-        <div className="edit-table-container">
+        {isLoading ? <Spinner /> : <div className="edit-table-container">
           {tableArray?.map((table, index) => {
             return (
               <div key={table._id} className="edit-table-card">
@@ -84,7 +85,7 @@ function TablesPage() {
           <button onClick={() => {document.getElementsByClassName("create-table-form")[0].style.display = "flex"}} className="edit-table-button">
             <img src={editIcon} width={15} height={15} alt=""  />
           </button>
-        </div>
+        </div>}
       </div>
     </div>
   );

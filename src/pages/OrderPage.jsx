@@ -3,10 +3,11 @@ import "./PagesStyle/order.css";
 import OrderCard from "../components/OrderCard";
 import { useGetOrdersQuery } from "../redux/slices/api/order.api.slice";
 import { useGetTablesQuery } from "../redux/slices/api/admin.api.slice";
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import Spinner from "../components/Spinner";
 
 function OrderPage() {
-  const { data: orders } = useGetOrdersQuery();
+  const { data: orders, isLoading } = useGetOrdersQuery();
   const { data: tables } = useGetTablesQuery();
   const [searchText, setSearchText] = useState("");
   const [orderArray, setOrderArray] = useState(orders || []);
@@ -42,20 +43,24 @@ function OrderPage() {
       <div className="table-content-container">
         <p className="table-content-title">Order Line</p>
 
-        <div className="order-line-container">
-          {orderArray
-            ?.slice()
-            .reverse()
-            .map((order, index) => {
-              return (
-                <OrderCard
-                  order={order}
-                  getTableIndex={getTableIndex}
-                  key={index}
-                />
-              );
-            })}
-        </div>
+        {isLoading ? (
+          <Spinner />
+        ) : (
+          <div className="order-line-container">
+            {orderArray
+              ?.slice()
+              .reverse()
+              .map((order, index) => {
+                return (
+                  <OrderCard
+                    order={order}
+                    getTableIndex={getTableIndex}
+                    key={index}
+                  />
+                );
+              })}
+          </div>
+        )}
       </div>
     </div>
   );
